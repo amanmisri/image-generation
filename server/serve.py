@@ -11,6 +11,7 @@ def main():
     os.chdir('static')
     server_address = ('', args.port)
     httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
+    print('Running')
     print('serving at http://127.0.0.1:%d' % args.port)
     httpd.serve_forever()
 
